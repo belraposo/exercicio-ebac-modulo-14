@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,700&family=Josefin+Slab:wght@400;500;700&display=swap" rel="stylesheet">   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="/index.css">
+   <title>Exercício - Módulo 14</title>
+</head>
+<body>
+   <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
+      <div class="container">
+         <h1 class="m-0 section-title">ReMystic</h1>
+         <button class="navbar-toggler mb-4" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <nav id="menu-navigation" class="navbar-collapse collapse justify-content-end">
+            <ul class="nav nav-pills d-block d-md-flex">
+               <li class="nav-item fw-bold">
+                  <a href="#sobre-remystic" class="nav-link">
+                     <i class="bi bi-cursor me-1"></i>
+                     Sobre a ReMystic
+                  </a>
+               </li>
+               <li class="nav-item fw-bold">
+                  <a href="#top-vendas" class="nav-link">
+                     <i class="bi bi-flower2 me-1"></i>
+                     Mais vendidos
+                  </a>
+               </li>
+               <li class="nav-item fw-bold">
+                  <a href="#produtos" class="nav-link">
+                     <i class="bi bi-flower3 me-1"></i>
+                     Produtos
+                  </a>
+               </li>
+               <li class="nav-item fw-bold">
+                  <a href="#contato" class="nav-link"> 
+                     <i class="bi bi-chat me-1"></i>
+                     Fale conosco
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+      <section id="sobre-remystic">
+         <div class="pt-5 pb-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-5">
+                     <img src="./images/about-img.jpg" class="w-100 rounded" alt="Foto de lavanda">
+                  </div>
+                  <div class="col-md-7 mt-3 mt-md-0">
+                     <h2 class="section-title">Sobre a ReMystic</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut amet quo nam dolorum dicta, sint magnam deserunt voluptas voluptatem architecto sapiente rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusamus quidem et ducimus nesciunt repudiandae eum tenetur! Alias nesciunt ex eum eius doloribus quos ut hic odit ipsum iure? Ipsum?</p>
+                     <h2 class="section-title">Sobre os produtos</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum porro vero quis, repellat in hic obcaecati accusamus est veniam rem, itaque animi nobis aliquam pariatur numquam dignissimos corrupti nemo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis laudantium error laboriosam obcaecati quod nobis velit quasi delectus fuga modi hic, deserunt minima vero, veniam non eos facere iusto et!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="top-vendas" class="pt-5 pb-5">
+         <div class="container">
+            <div class="row">
+               <h2 class="section-title text-center">Produtos mais vendidos</h2>
+            </div>
+            <div class="row mt-4">
+               <div class="carousel slide carousel-dark" id="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="card mb-3 me-2 d-inline-block" style="max-width: 625px;">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="./images/slide/slide01.png" class="img-fluid rounded-start" alt="Colar de turmalina negra">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Colar de turmalina negra</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit et optio rerum.</p>
+                                    <p class="card-text"><small class="text-body-secondary">R$29,90 - vendidos: 367</small></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card mb-3 me-2 d-inline-block" style="max-width: 625px;">
+                              <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="./images/slide/slide02.png" class="img-fluid rounded-start" alt="Colar de quartzo">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Colar de quartzo</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit et optio rerum.</p>
+                                    <p class="card-text"><small class="text-body-secondary">R$29,90 - vendidos: 634</small></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="card mb-3 me-2 d-inline-block" style="max-width: 625px;">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="./images/slide/slide04.png" class="img-fluid rounded-start" alt="Opala bruto">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Opala bruto</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit et optio rerum.</p>
+                                    <p class="card-text"><small class="text-body-secondary">R$19,90 - vendidos: 345</small></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card mb-3 me-2 d-inline-block" style="max-width: 625px;">
+                              <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="./images/slide/slide05.png" class="img-fluid rounded-start" alt="Quartzo bruto">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Quartzo bruto</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit et optio rerum.</p>
+                                    <p class="card-text"><small class="text-body-secondary">R$17,89 - vendidos: 814</small></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="card mb-3 me-2 d-inline-block" style="max-width: 625px;">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="./images/slide/slide09.png" class="img-fluid rounded-start" alt="Celestina rolada">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Celestina rolada</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit et optio rerum.</p>
+                                    <p class="card-text"><small class="text-body-secondary">R$21,90 - vendidos: 731</small></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card mb-3 me-2 d-inline-block" style="max-width: 625px;">
+                              <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img src="./images/slide/slide08.png" class="img-fluid rounded-start" alt="Pedra da lua rolada">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Pedra da lua rolada</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit et optio rerum.</p>
+                                    <p class="card-text"><small class="text-body-secondary">R$21,90 - vendidos: 676</small></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button"> 
+                     <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button"> 
+                     <span class="carousel-control-next-icon"></span>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="produtos" class="pt-5 pb-5">
+         <div class="container">
+            <div class="row">
+               <h2 class="section-title text-center mb-5">Nossos produtos</h2>
+            </div>
+            <div class="row">
+               <aside class="col-md-3">
+                  <nav class="nav nav-pills flex-column nav-produtos">
+                     <button data-bs-toggle="tab" data-bs-target="#cristais01" class="nav-link fw-bold text-start text-colored" type="button">Cristais (pedra rolada)</button>
+                     <button data-bs-toggle="tab" data-bs-target="#cristais02" class="nav-link fw-bold text-start text-colored active" type="button">Cristais (bruto)</button>
+                     <button data-bs-toggle="tab" data-bs-target="#ervas-naturais" class="nav-link fw-bold text-start text-colored" type="button">Ervas naturais</button>
+                     <button data-bs-toggle="tab" data-bs-target="#incensos" class="nav-link fw-bold text-start text-colored" type="button">Incensos</button>
+                     <button data-bs-toggle="tab" data-bs-target="#joias" class="nav-link fw-bold text-start text-colored" type="button">Jóias</button>
+                  </nav>
+               </aside>
+               <div class="col-md-9">
+                  <div class="tab-content">
+                     <div id="cristais01" class="tab-pane active">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-rolada/celestina-rolada.png" class="d-block w-100" alt="Celestina rolada">
+                              <h5 class="text-colored fw-bold mt-2">Celestina</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-rolada/larimar-rolada.png" class="d-block w-100" alt="Larimar rolada">
+                              <h5 class="text-colored fw-bold mt-2">Larimar</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-rolada/pedra-da-lua.png" class="d-block w-100" alt="Pedra da lua rolada">
+                              <h5 class="text-colored fw-bold mt-2">Pedra da lua</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-rolada/ametista-rolada.jpg" class="d-block w-100" alt="Ametista rolada">
+                              <h5 class="text-colored fw-bold mt-2">Ametista</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="cristais02" class="tab-pane">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-bruta/ametista-bruto.jpg" class="d-block w-100" alt="Ametista bruta">
+                              <h5 class="text-colored fw-bold mt-2">Ametista</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-bruta/aqua-aura-bruto.jpg" class="d-block w-100" alt="Aqua Aura bruta">
+                              <h5 class="text-colored fw-bold mt-2">Aqua Aura</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-bruta/citrino-bruto.jpg" class="d-block w-100" alt="Citrino bruto">
+                              <h5 class="text-colored fw-bold mt-2">Citrino</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-bruta/obsidiana-bruto.jpg" class="d-block w-100" alt="Obsidiana bruta">
+                              <h5 class="text-colored fw-bold mt-2">Obsidiana</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-bruta/opala-bruto.jpg" class="d-block w-100" alt="Opala bruta">
+                              <h5 class="text-colored fw-bold mt-2">Opala</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/pedra-bruta/quartzo-bruto.jpg" class="d-block w-100" alt="Quartzo bruto">
+                              <h5 class="text-colored fw-bold mt-2">Quartzo</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="ervas-naturais" class="tab-pane">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img src="./images/produtos/ervas/product-1.jpg" class="d-block w-100" alt="Ervas limpeza energética">
+                              <h5 class="text-colored fw-bold mt-2">Ervas limpeza energética</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/ervas/product-2.jpg" class="d-block w-100" alt="Rosas secas">
+                              <h5 class="text-colored fw-bold mt-2">Rosas secas</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/ervas/product-3.jpg" class="d-block w-100" alt="Kit ervas">
+                              <h5 class="text-colored fw-bold mt-2">Kit ervas prosperidade</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/ervas/product-4.jpg" class="d-block w-100" alt="Flores secas">
+                              <h5 class="text-colored fw-bold mt-2">Flores secas</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="incensos" class="tab-pane">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img src="./images/produtos/incensos/incensos-naturais.jpg" class="d-block w-100" alt="Incensos naturais">
+                              <h5 class="text-colored fw-bold mt-2">Incensos naturais</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/incensos/incensos-rem.jpg" class="d-block w-100" alt="Incensos Rem">
+                              <h5 class="text-colored fw-bold mt-2">Incensos Rem</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/incensos/palo-santo.jpg" class="d-block w-100" alt="Palo Santo">
+                              <h5 class="text-colored fw-bold mt-2">Palo Santo</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/incensos/incensario-porcelana.jpg" class="d-block w-100" alt="Incensario de porcelana">
+                              <h5 class="text-colored fw-bold mt-2">Incensario de porcelana</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="joias" class="tab-pane">
+                        <div class="row">
+                           <div class="col-md-3">
+                              <img src="./images/produtos/jóias/pulseira-jade.jpg" class="d-block w-100" alt="Pulseira de jade">
+                              <h5 class="text-colored fw-bold mt-2">Pulseira de jade</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/jóias/anel-ametista.jpg" class="d-block w-100" alt="Anel de ametista">
+                              <h5 class="text-colored fw-bold mt-2">Anel de ametista</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/jóias/colar-turmalina-negra.jpeg" class="d-block w-100" alt="Colar turmalina negra">
+                              <h5 class="text-colored fw-bold mt-2">Colar de turmalina negra</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/jóias/colar-quartzo.jpg" class="d-block w-100" alt="Colar de quartzo">
+                              <h5 class="text-colored fw-bold mt-2">Colar de quartzo</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/jóias/pulseira-quartzo-rosa.jpg" class="d-block w-100" alt="Pulseira de quartzo rosa">
+                              <h5 class="text-colored fw-bold mt-2">Pulseira de quartzo rosa</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                           <div class="col-md-3">
+                              <img src="./images/produtos/jóias/anel-jade.jpg" class="d-block w-100" alt="Anel de jade">
+                              <h5 class="text-colored fw-bold mt-2">Anel de jade</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contato" class="pb-5 pt-5">
+         <div class="container">
+            <div class="row">
+               <h2 class="section-title text-center">Fale conosco</h2>
+            </div>
+            <div class="row">
+               <div class="col-md-7 mb-5">
+                  <form class="form">
+                     <div class="mb-3 me-2">
+                        <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                        <input type="text" id="nome" class="form-control" required>
+                     </div>
+                     <div class="mb-3">
+                        <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                        <input type="email" id="email" class="form-control" required>
+                     </div>
+                     <div class="mb-3">
+                        <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                        <input type="tel" id="telefone" class="form-control">
+                     </div>
+                     <div class="mb-3">
+                        <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                        <textarea id="mensagem" class="form-control" required></textarea>
+                     </div>
+                     <button type="submit" class="btn fw-bold mb-5">Enviar</button>
+                  </form>
+               </div>
+               <div class="col-md-5">
+                  <div class="row">
+                     <h3 class="section-title fs-4">
+                        <i class="bi bi-hand-thumbs-up-fill text-colored"></i>
+                        Redes sociais
+                     </h3>
+                     <ul class="social-links">
+                        <li class="fs-5">
+                           <a href="https://www.facebook.com/" target="_blank">
+                              <i class="bi bi-facebook text-black"></i>
+                           </a>
+                        </li>
+                        <li class="fs-5 ms-2 me-2">
+                           <a href="https://www.instagram.com/" target="_blank">
+                              <i class="bi bi-instagram text-black"></i>
+                           </a>
+                        </li>
+                        <li class="fs-5">
+                           <a href="https://web.whatsapp.com/" target="_blank">
+                              <i class="bi bi-whatsapp text-black"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="row mt-4">
+                     <h3 class="section-title fs-4">
+                        <i class="bi bi-cursor-fill text-colored"></i>
+                        Endereço
+                     </h3>
+                     <p>Rua do Limão nº239, Bairro do Limoeiro - São Paulo, SP </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
