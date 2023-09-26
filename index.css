@@ -1,0 +1,62 @@
+body {
+   font-family: 'Josefin Slab', serif;
+   font-weight: 500;
+}
+
+.navbar {
+   background-image: url('./images/home-nav.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+}
+
+#cabecalho .nav .nav-link.active {
+   background-color: #fff;
+   color: #A74EDE;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand, 
+.navbar-brand:hover, 
+.nav-produtos .nav-link.active:hover {
+   color: #fff;
+}
+
+.section-title {
+   font-family: 'Crimson Text', serif;
+   font-weight: 700;
+   font-style: italic;
+}
+
+h1 {
+   color: #fff;
+}
+
+.text-colored {
+   color: #A74EDE;
+}
+
+.nav-produtos .nav-link.active,
+#contato button {
+   background-color: #36164b;
+   color: #fff;
+}
+
+.nav-produtos .nav-link:hover {
+   color: #36164b;
+}
+
+.social-links li {
+   list-style: none;
+   display: inline;
+}
+
+.social-links li a {
+   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+   .carousel-item img {
+      height: 250px;
+   }
+}
